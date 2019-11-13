@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.notes-list-item {
+    background: white;
+    padding: 2em;
+    border: solid 1px lightgray;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em 0 #0002;
+}
