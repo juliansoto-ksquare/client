@@ -97,10 +97,35 @@ function NotesListItem({title, content, id}) {
     const p = document.createElement('p');
 
     li.classList.add('notes-list-item');
+    article.classList.add('note-container');
+    h1.classList.add('note-title');
+    p.classList.add('note-content');
+    closeButton.classList.add('close-button');
+
     li.setAttribute('data-key', id);
     h1.setAttribute('contentEditable', true);
     p.setAttribute('contentEditable', true);
-    closeButton.innerHTML = 'X';
+
+    closeButton.innerHTML = `
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18" height="18"
+            viewBox="0 0 18 18"
+        >
+            <path
+                d="
+                    M14.53
+                    4.53l-1.06-1.06L9
+                    7.94 4.53 3.47
+                    3.47 4.53 7.94
+                    9l-4.47 4.47 1.06
+                    1.06L9 10.06l4.47
+                    4.47 1.06-1.06L10.06
+                    9z
+                "
+            />
+        </svg>
+    `;
 
     li.appendChild(closeButton);
     article.appendChild(h1);
