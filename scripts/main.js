@@ -143,6 +143,18 @@ function NotesListItem({title, content, id}) {
         }
     })
 
+    h1.addEventListener('keyup', e => {
+        if (e.keyCode === 27) {
+            e.target.blur();
+        }
+    });
+
+    p.addEventListener('keyup', e => {
+        if (e.keyCode === 27) {
+            e.target.blur();
+        }
+    });
+
     this.getElement = () => {
         return li;
     }

@@ -35,6 +35,10 @@ header {
     border-radius: 0.5em;
 }
 
+#notes-list {
+    margin-bottom: 1em;
+}
+
 .notes-list-item {
     position: relative;
     background: white;
